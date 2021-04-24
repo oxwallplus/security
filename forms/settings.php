@@ -20,11 +20,7 @@ class SECURITY_FORM_Settings extends Form
         $this->language = OW::getLanguage();
         
         $enableCaptcha = new ELEMENT_Checkbox('enableCaptcha');
-        $enableCaptcha->setToggle(true);
-        $enableCaptcha->addAttributes(array(
-            'data-off' => $this->language->text('base', 'no'),
-            'data-on'=> $this->language->text('base', 'yes')
-        ));
+        $enableCaptcha->setSwitch();
         $enableCaptcha->setLabel($this->language->text($this->key, 'enable_captcha'), array('class' => 'col-sm-4 col-form-label'));
         $this->addElement($enableCaptcha);
         
