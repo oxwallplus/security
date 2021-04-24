@@ -23,7 +23,6 @@ class SECURITY_CTRL_Admin extends OW_BackendController
         $this->setPageHeading($this->language->text($this->key, 'admin_title'));
         $this->setPageHeadingIconClass('ow_ic_star');
 
-        OW::getNavigation()->activateMenuItem('admin_settings', 'admin', 'sidebar_menu_security');
         $this->assign('key', $this->key);
     }
 

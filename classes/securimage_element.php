@@ -62,7 +62,7 @@ class SECURITY_CLASS_SecurimageElement extends ELEMENT_Captcha
 
         OW::getDocument()->addOnloadScript($code);
        
-        return '<div class="form-group" id="'.$this->objectName.'">
+        return '<div class="mb-3" id="'.$this->objectName.'">
             <div class="row justify-content-md-center">
                 <div class="col-md-auto">
                     <img src="'.$image.'" id="'.$this->objectName.'-captcha">
