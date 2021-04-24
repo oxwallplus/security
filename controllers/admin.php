@@ -8,7 +8,7 @@
  * @email kontakt@artmedia.biz.pl
  */
 
-class SECURITY_CTRL_Admin extends ADMIN_CTRL_Abstract
+class SECURITY_CTRL_Admin extends OW_BackendController
 {
     private $key;
     private $language;
